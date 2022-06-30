@@ -197,10 +197,14 @@ namespace MultiValueDictionary
                                 foreach (var member in dictionary.GetMembers(key))
                                 {
                                     Console.WriteLine($"{itemNum}) {key}: {member}");
+                                    itemNum++;
                                 }
                             }
                         }
                     }
+                    break;
+                case "EXIT":
+                    Environment.Exit(200);
                     break;
                 default:
                     Console.WriteLine("ERROR, Invalid Command");
